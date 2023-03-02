@@ -13,5 +13,7 @@ Rails.application.routes.draw do
     get 'reset_password', to: 'users/passwords#edit'
   end
 
+  post :import, to: 'game#import', as: 'game_import'
+
   root to: 'application#home'
 end
